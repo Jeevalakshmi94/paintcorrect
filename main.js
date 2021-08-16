@@ -11,7 +11,7 @@ widthoftheline = document.getElementById("widthofline").value;
 mouseevent = "mouseDown"
 } 
 canvas.addEventListener ("mousemove",my_mousemove)
-function my_mousemove (e) {
+function my_mousemove(e) {
     currentpositionofmousex = e.clientX - canvas.offsetLeft;
     currentpositionofmousey = e.clientY - canvas.offsetTop;
 if( mouseevent == "mouseDown") {
@@ -19,7 +19,7 @@ if( mouseevent == "mouseDown") {
     ctx.strokeStyle = color;
     ctx. lineWidth = widthoftheline;
     console.log("lastpositionofxandy"+lastpositionofx,lastpositionofy);
-    ctx.stroke ()
+    ctx.stroke()
 }
     lastpositionofx = currentpositionofmousex;           
     lastpositionofy = currentpositionofmousey;                                                                                                                               ""
